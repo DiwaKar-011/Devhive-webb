@@ -23,7 +23,7 @@ const events: EventItem[] = [
     date: "4 apr 2026",
     seatsText: "0/150 Team",
     type: "Hackathon",
-    viewUrl: "https://cypherversee.netlify.app/",
+    viewUrl: "https://diwakar-011.github.io/CypherVerse/",
   },
   {
     title: "Nirmaan",
