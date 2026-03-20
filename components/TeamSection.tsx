@@ -12,6 +12,8 @@ type Member = {
   role: string;
   initials: string;
   color: string;
+  github: string;
+  linkedin: string;
 };
 
 const members: Member[] = [
@@ -20,42 +22,57 @@ const members: Member[] = [
     role: "President",
     initials: "NJ",
     color: "bg-slate-400/30 text-slate-200",
+    github: "https://github.com/nish-jain4",
+    linkedin: "https://www.linkedin.com/in/nishtha-jain411/",
   },
   {
     name: "Himanshu Siwach",
     role: "Vice President",
     initials: "HS",
-    color: "bg-teal-400/30 text-teal-200"
+    color: "bg-teal-400/30 text-teal-200",
+    github: "https://github.com/your-himanshu",
+    linkedin: "https://www.linkedin.com/in/your-himanshu",
   },
   {
     name: "Khushboo Bansal",
     role: "Secretary",
     initials: "KB",
     color: "bg-violet-400/30 text-violet-200",
+    github: "https://github.com/your-himanshu",
+    linkedin: "https://www.linkedin.com/in/your-himanshu",
   },
   {
     name: "Parag Shrivastava",
     role: "Tech Head",
-    initials: "PM",
+    initials: "PS",
     color: "bg-sky-400/30 text-sky-200",
+    github: "https://github.com/wingFire-29",
+    linkedin: "https://www.linkedin.com/in/parag-shrivastavadatascience/",
+ 
   },
   {
     name: "Dhairya Ahuja",
     role: "PR Head",
-    initials: "DA",
+    initials: "DA", 
     color: "bg-orange-400/30 text-orange-200",
+    github: "https://github.com/your-himanshu",
+    linkedin: "https://www.linkedin.com/in/your-himanshu",
   },
   {
     name: "Alis Thakur",
     role: "Event Head",
     initials: "AT",
     color: "bg-pink-400/30 text-pink-200",
+    github: "https://github.com/your-himanshu",
+    linkedin: "https://www.linkedin.com/in/your-himanshu",
   },
   {
     name: "Abhitesh",
-    role: "Event Head",
+    role: "Design & Content Head",
     initials: "A",
     color: "bg-pink-400/30 text-pink-200",
+    github: "https://github.com/your-himanshu",
+    linkedin: "https://www.linkedin.com/in/your-himanshu",
   },
 ];
 
@@ -87,10 +104,10 @@ export default function TeamSection({ onApplyNow }: TeamSectionProps) {
               <h3 className="font-syne text-2xl font-bold">{member.name}</h3>
               <p className="text-sm text-white/60">{member.role}</p>
               <div className="mt-5 flex gap-3 text-white/65">
-                <a href="#" className="transition hover:text-accent" aria-label={`${member.name} GitHub`}>
+                <a href={member.github} target="_blank" rel="noopener noreferrer" className="transition hover:text-accent" aria-label={`${member.name} GitHub`}>
                   <Github size={16} />
                 </a>
-                <a href="#" className="transition hover:text-accent" aria-label={`${member.name} LinkedIn`}>
+                <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="transition hover:text-accent" aria-label={`${member.name} LinkedIn`}>
                   <Linkedin size={16} />
                 </a>
               </div>
